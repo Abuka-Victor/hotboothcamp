@@ -71,23 +71,23 @@ nav ul li a {
     height: 65vh;
 }
 
-.info {
+.info-home {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 4rem;
 }
 
-.info h2{
+.info-home h2{
     font-size: 38px;
     margin-bottom: 2rem;
 }
 
-.info h3{
+.info-home h3{
     font-size: 30px;
 }
 
-.info ul {
+.info-home ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -97,14 +97,14 @@ nav ul li a {
     padding: 2rem;
 }
 
-.info ul li{
+.info-home ul li{
     background-color: #123456;
     color: #fff;
     padding: 2rem;
     border-radius: 4px;
 }
 
-.info ul li p{
+.info-home ul li p{
     font-size: 1.5rem;
 }
 
@@ -117,6 +117,41 @@ footer{
     text-align: center;
     justify-content: space-around;
     font-size: xx-large;
+}
+
+.info-section section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding: 10px;
+}
+
+.info-section > h2{
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+
+.card{
+    width: 450px;
+    border: 1px solid #123456;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.card > h3{
+    text-align: left;
+    padding: 10px;
+    margin-bottom: .5rem;
+}
+
+.card p{
+    margin-bottom: 1rem;
+}
+
+.card img{
+    width: 100%;
+    height: 50%;
 }
 
 @media screen and (max-width: 790px){
@@ -132,11 +167,19 @@ footer{
         height: 40vh;
     }
 
-    .info ul {
+    .info-home ul {
         grid-template-columns: repeat(1, 1fr);
     }
 
     footer {
         flex-direction: column;
+    }
+
+    .info-section section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card{
+        width: 80vw;
     }
 }
