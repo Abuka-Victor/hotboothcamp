@@ -23,7 +23,6 @@ nav {
 
 nav ul {
     display: flex;
-    /* gap: 3rem; */
 }
 
 nav ul li{
@@ -43,16 +42,28 @@ nav ul li:hover a{
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .hero_container{
     padding: 2rem 0;
 }
 
+.hero_container h1{
+    font-size: 4rem;
+}
+
+.hero_container p{
+    font-size: 2rem;
+}
+
 .hero_image{
     background: #fff;
     padding: 10px;
+}
+
+.hero_image p{
+    font-size: 2rem;
 }
 
 .hero_image img{
@@ -64,6 +75,37 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 4rem;
+}
+
+.info h2{
+    font-size: 38px;
+    margin-bottom: 2rem;
+}
+
+.info h3{
+    font-size: 30px;
+}
+
+.info ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.info ul li{
+    background-color: #123456;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.info ul li p{
+    font-size: 1.5rem;
 }
 
 footer{
